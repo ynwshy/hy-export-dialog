@@ -1,0 +1,61 @@
+{
+  "name": "hy-export-dialog",
+  "version": "0.0.1",
+  "description": "hy export dialog element",
+  "private": true,
+  "main": "lib/exportDialog.common.js",
+  "keywords": [
+    "hy export dialog",
+    "element"
+  ],
+  "author": "https://github.com/ynwshy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ynwshy/hy-export-dialog/issues"
+  },
+  "homepage": "https://github.com/ynwshy/hy-export-dialog#readme",
+  "scripts": {
+    "lib": "vue-cli-service build --target lib --name export-dialog --dest lib ./src/packages/exportDialog/index.js",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ynwshy/hy-export-dialog.git"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "element-ui": "^2.4.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-cli-plugin-element": "^1.0.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
