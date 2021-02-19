@@ -2,8 +2,7 @@
   "name": "hy-export-dialog",
   "version": "0.0.1",
   "description": "hy export dialog element",
-  "private": true,
-  "main": "lib/exportDialog.common.js",
+  "main": "src/packages/exportDialog/index.js",
   "keywords": [
     "hy export dialog",
     "element"
