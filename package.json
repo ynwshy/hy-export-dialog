@@ -1,6 +1,6 @@
 {
   "name": "hy-export-dialog",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "hy export dialog element",
   "main": "src/packages/exportDialog/index.js",
   "keywords": [
@@ -26,7 +26,8 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "element-ui": "^2.4.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "dayjs": "1.9.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
