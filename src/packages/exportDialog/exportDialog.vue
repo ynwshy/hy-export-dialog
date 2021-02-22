@@ -75,7 +75,7 @@ export default {
                 title: '导出提示',
                 message: '是否导出当前条件下的数据！',
                 btnStartExport: '开始导出',
-                downLoadType: 'href', // 下载方式： open :新窗口打开 (会闪烁) , href:当前页面 ,iframe :iframe 标签打开
+                downLoadType: 'open', // 下载方式： open :新窗口打开 (会闪烁) , href:当前页面 ,iframe :iframe 标签打开
                 exportCode: null, // 用于缓存标识
                 isHistory: true, // 是否需要启用历史记录功能
                 showHistory: false, // 显示历史记录
@@ -150,7 +150,7 @@ export default {
             });
          */
         exportComplete({ url = this.defaultOptions.url, logRes = this.defaultOptions.logRes, message = this.defaultOptions.message, title = this.defaultOptions.title, status = this.defaultOptions.status }) {
-            this.defaultOptions = { ...this.defaultOptions, url, logRes, message, title, status };
+            this.defaultOptions = { ...this.defaultOptions, url: url || '', logRes: logRes || {}, message: message || '', title: title || '', status };
             this.dialogToggle = true;
             this.loadingExport = false;
             try {
@@ -182,7 +182,7 @@ export default {
                     }, this.defaultOptions.autoDownLoadTimes);
                 }
             } else if (this.defaultOptions.status == 'error') {
-                this.$message({ showClose: true, message: this.defaultOptions.message || '导出异常！', type: 'error' });
+                // this.$message({ showClose: true, message: this.defaultOptions.message || '导出异常！', type: 'error' });
             }
         },
         exportSuccess(option) {

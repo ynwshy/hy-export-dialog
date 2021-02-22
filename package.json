@@ -1,6 +1,6 @@
 {
   "name": "hy-export-dialog",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "hy export dialog element",
   "main": "src/packages/exportDialog/index.js",
   "keywords": [
